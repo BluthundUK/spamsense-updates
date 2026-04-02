@@ -1,9 +1,9 @@
 {
     "metadata": {
-        "version": "1.0.09",
-        "last_updated": "2026-04-02T15:06:18Z",
+        "version": "1.0.10",
+        "last_updated": "2026-04-02T17:05:23Z",
         "author": "SpamSense Security Team",
-        "signature": "xfz3WatBwVKWxHaI8F++R2/mUeesCVq7tf8kBQzxoJBvgVicesNN9jD370+bXLDK734Oy/ISXDU92rypJwycAQ=="
+        "signature": "LzlQP+XCB8WjMarGnKJl02twnx2zdkcl4F4H/jqE10VLvweqTOox+sjgRA27/4r/VynDa6GyOTbPdXQha6xeDQ=="
     },
     "spam_tlds": [
         "co",
@@ -27,7 +27,8 @@
             "obd2-chip",
             "sprit aus",
             "kollege das hier",
-            "oelkonzerne verbieten"
+            "oelkonzerne verbieten",
+            "eu business register"
         ]
     },
     "semantic_clusters": {
@@ -50,6 +51,11 @@
         "PDF_Data_Harvesting_Lure": "(?i)complete and submit the attached form \\(pdf\\) in a reply.*Updating is free of charge",
         "Future_Dated_Information_Request_Subject": "^Add or Update Your Information for \\d{4}/\\d{4}$",
         "Suspicious_Sender_Domain": "projectlan\\.org",
-        "Reply_To_Unsubscribe_Pattern": "(?i)Please reply with Unsubscribe"
+        "Reply_To_Unsubscribe_Pattern": "(?i)Please reply with Unsubscribe",
+        "Impersonation_Business_Directory": "(EU|European)?\\s*Business\\s*Register",
+        "Form_Submission_Request": "(complete|submit)\\s+(the\\s+)?attached\\s+form(\\s+\\(pdf\\))?\\s+in\\s+a\\s+reply",
+        "Future_Date_Anomaly": "\\b(202[5-7]|203[0-9])\\b",
+        "Unsubscribe_Confirmation_Trap": "reply\\s+with\\s+Unsubscribe",
+        "Free_Update_Bait": "Updating\\s+is\\s+free\\s+of\\s+charge"
     }
 }
