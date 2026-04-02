@@ -1,14 +1,16 @@
 {
     "metadata": {
-        "version": "1.9.9",
-        "last_updated": "2026-04-02T17:05:23Z",
+        "version": "1.0.11",
+        "last_updated": "2026-04-02T18:15:30Z",
         "author": "SpamSense Security Team",
-        "signature": "LzlQP+XCB8WjMarGnKJl02twnx2zdkcl4F4H/jqE10VLvweqTOox+sjgRA27/4r/VynDa6GyOTbPdXQha6xeDQ=="
+        "signature": "HPxpeLZTcp0sQX+m8+L8DvR5XAOIUzuZDrhy1WHc6vLn/hwGuHSVNcg5pM4MDhv90Mg8wF7vdKPBYs/PTN9vBQ=="
     },
     "spam_tlds": [
         "co",
         "email",
-        "link"
+        "link",
+        "org",
+        "dk"
     ],
     "keywords": {
         "malware_subjects": [
@@ -28,7 +30,8 @@
             "sprit aus",
             "kollege das hier",
             "oelkonzerne verbieten",
-            "eu business register"
+            "eu business register",
+            "koch-chemie gmbh"
         ]
     },
     "semantic_clusters": {
@@ -56,6 +59,11 @@
         "Form_Submission_Request": "(complete|submit)\\s+(the\\s+)?attached\\s+form(\\s+\\(pdf\\))?\\s+in\\s+a\\s+reply",
         "Future_Date_Anomaly": "\\b(202[5-7]|203[0-9])\\b",
         "Unsubscribe_Confirmation_Trap": "reply\\s+with\\s+Unsubscribe",
-        "Free_Update_Bait": "Updating\\s+is\\s+free\\s+of\\s+charge"
+        "Free_Update_Bait": "Updating\\s+is\\s+free\\s+of\\s+charge",
+        "Impersonated_Company_Name": "(Koch-Chemie GmbH|INTRA GmbH|Firma Butz GmbH & Co\\.KG\\.)",
+        "Invoice_Order_Lure_Phrase": "(Rechnung R\\d{9} f[üu]r Ihre Bestellung vom \\d{2}\\.\\d{2}\\.\\d{2}|begleichen Sie die Rechnung)",
+        "Malicious_Attachment_HTML_Pattern": "R\\d{9}\\.html",
+        "Malicious_Script_Domain_Pattern": "[a-zA-Z0-9\\-\\.]{3,}\\.dk",
+        "Embedded_Malicious_Script_URL_Pattern": "https:\\/\\/[a-zA-Z0-9\\-\\.]+\\.dk\\/\\?u=[a-zA-Z0-9]+"
     }
 }
