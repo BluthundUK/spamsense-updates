@@ -1,0 +1,36 @@
+{
+    "metadata": {
+        "version": "1.0.6",
+        "last_updated": "2026-04-02T09:55:12Z",
+        "author": "SpamSense Security Team",
+        "signature": "1dc29MUvTEKqg4/NUx2x7ONLlNQdRiVuPEC3YfcIbrW03XZLqoOJDZjf+oSn0cUfjKutzsxXSuvEZHm8ZnBhCg=="
+    },
+    "spam_tlds": [
+        "xyz",
+        "co"
+    ],
+    "keywords": {
+        "malware_subjects": [
+            "dringend",
+            "konto",
+            "gesperrt",
+            "auto reply",
+            "email acknowledgement",
+            "case number",
+            "monat fuer sprit",
+            "out of office response",
+            "telefonnummer bestätigen",
+            "ihre telefonnummer bestätigen – sicherheitseinstellungen",
+            "add or update your information"
+        ]
+    },
+    "semantic_clusters": {
+        "phishing_panic": "(DRINGEND|Konto\\s*gesperrt|Sicherheitsgründen|sofort|Zahlungsdaten\\s*aktualisieren|innerhalb\\s*\\d+\\s*Stunden\\s*handeln|Konto\\s*dauerhaft\\s*gelöscht)",
+        "impersonated_support_reply": "(Auto\\s*Reply|Email\\s*Acknowledgement|Case\\s*Number)",
+        "german_clickbait_finance": "(280\\s*Euro\\s*im\\s*Monat\\s*(?:fuer|f\\u00fcr)\\s*Sprit|Kollege\\s*zeigte\\s*mir\\s*das\\s*hier)",
+        "auto_reply_spam": "(out\\s*of\\s*office\\s*response|i\\s*am\\s*of\\s*the\\s*office|returning\\s*monday\\s*13th\\s*april)",
+        "auto_response_abuse": "(Out\\s*Of\\s*Office\\s*Response|I\\s*am\\s*of\\s*the\\s*office|returning\\s+Mon(?:day)?|thanks\\s+for\\s+contacting)",
+        "sumup_security_phishing_de": "(sumup.*?(telefonnummer\\s*(bestätigen|verifizieren)|sicherheit(seinstellungen)?|konto(aktivitäten|schutz)?))",
+        "impersonation_business_registry": "(EU\\s*Business\\s*Register|(add|update)\\s*(your\\s*)?(company|business)\\s*(details|information)|(complete|submit|reply)\\s*(the\\s*)?attached\\s*form(\\s*pdf)?|updating\\s*is\\s*free\\s*of\\s*charge|reply\\s*with\\s*Unsubscribe)"
+    }
+}
