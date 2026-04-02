@@ -1,13 +1,15 @@
 {
     "metadata": {
-        "version": "1.0.8",
-        "last_updated": "2026-04-02T13:21:55Z",
+        "version": "1.0.9",
+        "last_updated": "2026-04-02T13:29:12Z",
         "author": "SpamSense Security Team",
-        "signature": "EuAM13ZnoZqKa9H1U6aLLjBSeseiWoT5GxgNTONZuzRv39QZPPAYLDtEf4BDDIvXRWYR6uU8Lvz2iPIM0HIWBg=="
+        "signature": "3ZBIkKy8TH5K3/lbVBPTtJBTS+2xAPa4Mm4TRz3STfY/lU9nFKhR9PsqT7og9vGQfvsw37b/FJ7mtNE038asAw=="
     },
     "spam_tlds": [
         "xyz",
-        "co"
+        "co",
+        "email",
+        "link"
     ],
     "keywords": {
         "malware_subjects": [
@@ -23,7 +25,10 @@
             "ihre telefonnummer bestätigen – sicherheitseinstellungen",
             "add or update your information",
             "dann zeigte mir ein kollege das hier.",
-            "obd2-chip"
+            "obd2-chip",
+            "sprit aus",
+            "kollege das hier",
+            "oelkonzerne verbieten"
         ]
     },
     "semantic_clusters": {
@@ -36,6 +41,9 @@
         "impersonation_business_registry": "(EU\\s*Business\\s*Register|(add|update)\\s*(your\\s*)?(company|business)\\s*(details|information)|(complete|submit|reply)\\s*(the\\s*)?attached\\s*form(\\s*pdf)?|updating\\s*is\\s*free\\s*of\\s*charge|reply\\s*with\\s*Unsubscribe)",
         "scam_fuel_saving": "(OBD2-Chip|Oelkonzerne\\s*verbieten|Sprit|Kraftstoff\\s*sparen|280\\s*Euro)",
         "Kraftstoffersparnis_MiracleProduct": "(?i)(?:280\\sEuro\\sim\\sMonat\\sfuer\\sSprit)|(?:30-Euro-OBD2-Chip)|(?:Oelkonzerne\\sverbieten\\swollen)",
-        "SocialEngineering_CuriosityBait": "(?i)(?:Dann\\szeigte\\smir\\sein\\sKollege\\sdas\\shier)"
+        "SocialEngineering_CuriosityBait": "(?i)(?:Dann\\szeigte\\smir\\sein\\sKollege\\sdas\\shier)",
+        "Kraftstoff-Spar-Betrug": "(Sprit|Benzin).*?(sparen|aus|senken)|(\\d+\\s*Euro).*?(Monat).*?(Sprit|Benzin)|OBD2-Chip|Oelkonzerne verbieten",
+        "Vertraulicher Tipp/Geheimnis-Lure": "(zeigte mir ein Kollege das hier|Geheimtipp|wollen verbieten)",
+        "Support-Ticket-Impersonierung": "\\[#\\d+\\]|Your message has been received|ticket id is|reply above this line|Please type your reply above this line"
     }
 }
