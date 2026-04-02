@@ -1,12 +1,11 @@
 {
     "metadata": {
-        "version": "1.0.11",
+        "version": "1.0.09",
         "last_updated": "2026-04-02T15:06:18Z",
         "author": "SpamSense Security Team",
         "signature": "xfz3WatBwVKWxHaI8F++R2/mUeesCVq7tf8kBQzxoJBvgVicesNN9jD370+bXLDK734Oy/ISXDU92rypJwycAQ=="
     },
     "spam_tlds": [
-        "xyz",
         "co",
         "email",
         "link"
