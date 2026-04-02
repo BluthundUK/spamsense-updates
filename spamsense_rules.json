@@ -1,16 +1,17 @@
 {
     "metadata": {
-        "version": "1.x.x",
-        "last_updated": "2026-04-02T18:15:30Z",
+        "version": "1.0.13",
+        "last_updated": "2026-04-02T18:53:29Z",
         "author": "SpamSense Security Team",
-        "signature": "HPxpeLZTcp0sQX+m8+L8DvR5XAOIUzuZDrhy1WHc6vLn/hwGuHSVNcg5pM4MDhv90Mg8wF7vdKPBYs/PTN9vBQ=="
+        "signature": "CNFvwX2Ohq5lK/09aqSTwXrqz6bLsyw8gQzt1cuVf8a66iimKQ9fNrnYRaedGw3tH8AVzrlr+DNVn6VadRZCCw=="
     },
     "spam_tlds": [
         "co",
         "email",
         "link",
         "org",
-        "dk"
+        "dk",
+        "rincondelvagocom"
     ],
     "keywords": {
         "malware_subjects": [
@@ -31,7 +32,10 @@
             "kollege das hier",
             "oelkonzerne verbieten",
             "eu business register",
-            "koch-chemie gmbh"
+            "koch-chemie gmbh",
+            "tan-verfahren",
+            "vr-securego",
+            "update"
         ]
     },
     "semantic_clusters": {
@@ -64,6 +68,15 @@
         "Invoice_Order_Lure_Phrase": "(Rechnung R\\d{9} f[üu]r Ihre Bestellung vom \\d{2}\\.\\d{2}\\.\\d{2}|begleichen Sie die Rechnung)",
         "Malicious_Attachment_HTML_Pattern": "R\\d{9}\\.html",
         "Malicious_Script_Domain_Pattern": "[a-zA-Z0-9\\-\\.]{3,}\\.dk",
-        "Embedded_Malicious_Script_URL_Pattern": "https:\\/\\/[a-zA-Z0-9\\-\\.]+\\.dk\\/\\?u=[a-zA-Z0-9]+"
+        "Embedded_Malicious_Script_URL_Pattern": "https:\\/\\/[a-zA-Z0-9\\-\\.]+\\.dk\\/\\?u=[a-zA-Z0-9]+",
+        "bank_impersonation": "VolksBank eG",
+        "security_update_scam": "Aktivieren sie das neue update !|Sie mÃ¼ssen das neue Web-Sicherheitssystem aktivieren.",
+        "urgency_deadline": "Diese Aktualisierung ist bis zum.* durchzufÃ¼hren",
+        "account_suspension_threat": "Wenn Sie sich nicht registrieren, werden die folgenden Optionen gesperrt",
+        "phishing_link_text": "Jetzt aktivieren",
+        "Urgency/Action": "Aktualisierung|aktivieren|registrieren|durchzuf\\u00fchren|gesperrt",
+        "Financial/Security": "TAN-Verfahren|SecureGo|Web-Sicherheitssystem|SecureGo-Plus|Bank",
+        "Impersonation": "Volksbank eG|Monika Wexler",
+        "Malicious Link Indicator": "Jetzt aktivieren|https://scan.page/"
     }
 }
