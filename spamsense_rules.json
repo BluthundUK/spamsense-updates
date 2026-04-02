@@ -1,9 +1,9 @@
 {
     "metadata": {
-        "version": "1.0.13",
-        "last_updated": "2026-04-02T18:53:29Z",
+        "version": "1.0.14",
+        "last_updated": "2026-04-02T19:49:55Z",
         "author": "SpamSense Security Team",
-        "signature": "CNFvwX2Ohq5lK/09aqSTwXrqz6bLsyw8gQzt1cuVf8a66iimKQ9fNrnYRaedGw3tH8AVzrlr+DNVn6VadRZCCw=="
+        "signature": "WiBon/ov89XEosXkSrNhKGH3EjJ5nuSAAsesNqbcj9AQkUJIWdI3/Aq4sRuzIJ+s8XUi7pguc3Z+E32kXQqlBA=="
     },
     "spam_tlds": [
         "co",
@@ -35,7 +35,8 @@
             "koch-chemie gmbh",
             "tan-verfahren",
             "vr-securego",
-            "update"
+            "update",
+            "your information"
         ]
     },
     "semantic_clusters": {
@@ -77,6 +78,10 @@
         "Urgency/Action": "Aktualisierung|aktivieren|registrieren|durchzuf\\u00fchren|gesperrt",
         "Financial/Security": "TAN-Verfahren|SecureGo|Web-Sicherheitssystem|SecureGo-Plus|Bank",
         "Impersonation": "Volksbank eG|Monika Wexler",
-        "Malicious Link Indicator": "Jetzt aktivieren|https://scan.page/"
+        "Malicious Link Indicator": "Jetzt aktivieren|https://scan.page/",
+        "company_information_request": "^(To add or update your company details for EU Business Register for 2026/2027, please complete and submit the attached form\\(pdf\\) in a reply.)",
+        "unsubscription_request": "^(Wish to no longer receive these messages\\? Please reply with Unsubscribe.)",
+        "sender_details": "^(EU BUSINESS REGISTER\\n?P\\.O\\.BOX 2021\\n?3500 GA UTRECHT\\n?THE NETHERLANDS)",
+        "attachment_handling": "^(All file formats are accepted\\.|You can also take a photo of the completed \\(form\\.pdf\\) document and email it in a reply\\.)"
     }
 }
