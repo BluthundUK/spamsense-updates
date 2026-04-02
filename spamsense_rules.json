@@ -1,9 +1,9 @@
 {
     "metadata": {
-        "version": "1.0.9",
-        "last_updated": "2026-04-02T13:29:12Z",
+        "version": "1.0.10",
+        "last_updated": "2026-04-02T13:40:29Z",
         "author": "SpamSense Security Team",
-        "signature": "3ZBIkKy8TH5K3/lbVBPTtJBTS+2xAPa4Mm4TRz3STfY/lU9nFKhR9PsqT7og9vGQfvsw37b/FJ7mtNE038asAw=="
+        "signature": "F0DuAztabdUD7LmDnaiK15S1m5mV5j+VA1uV25/W5ImXwioAldTt6Vs7pzMRxyBI5ibovPBmJ5CH1bmIUfgYDQ=="
     },
     "spam_tlds": [
         "xyz",
@@ -44,6 +44,8 @@
         "SocialEngineering_CuriosityBait": "(?i)(?:Dann\\szeigte\\smir\\sein\\sKollege\\sdas\\shier)",
         "Kraftstoff-Spar-Betrug": "(Sprit|Benzin).*?(sparen|aus|senken)|(\\d+\\s*Euro).*?(Monat).*?(Sprit|Benzin)|OBD2-Chip|Oelkonzerne verbieten",
         "Vertraulicher Tipp/Geheimnis-Lure": "(zeigte mir ein Kollege das hier|Geheimtipp|wollen verbieten)",
-        "Support-Ticket-Impersonierung": "\\[#\\d+\\]|Your message has been received|ticket id is|reply above this line|Please type your reply above this line"
+        "Support-Ticket-Impersonierung": "\\[#\\d+\\]|Your message has been received|ticket id is|reply above this line|Please type your reply above this line",
+        "Spoofed_From_via_MailingList_DMARCFail": "(?i)From: .*?@(?P<spoofed_domain>[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,})[\\s\\S]*?Sender: .*?@(?P<list_domain>[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,})[\\s\\S]*?Authentication-Results:.*dmarc=fail.*?header.from=\\k<spoofed_domain>",
+        "Google_Groups_as_Unofficial_Relay": "(?i)(?:List-ID|Mailing-List|Sender|Return-Path):.*@([a-zA-Z0-9.-]+\\.com)[\\s\\S]*?Received:.*?by.*?google\\.com[\\s\\S]*?From:.*?@([a-zA-Z0-9.-]+\\.[a-zA-Z]{2,})"
     }
 }
