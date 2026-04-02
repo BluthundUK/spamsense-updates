@@ -1,9 +1,9 @@
 {
     "metadata": {
-        "version": "1.0.10",
-        "last_updated": "2026-04-02T13:40:29Z",
+        "version": "1.0.11",
+        "last_updated": "2026-04-02T15:06:18Z",
         "author": "SpamSense Security Team",
-        "signature": "F0DuAztabdUD7LmDnaiK15S1m5mV5j+VA1uV25/W5ImXwioAldTt6Vs7pzMRxyBI5ibovPBmJ5CH1bmIUfgYDQ=="
+        "signature": "xfz3WatBwVKWxHaI8F++R2/mUeesCVq7tf8kBQzxoJBvgVicesNN9jD370+bXLDK734Oy/ISXDU92rypJwycAQ=="
     },
     "spam_tlds": [
         "xyz",
@@ -46,6 +46,11 @@
         "Vertraulicher Tipp/Geheimnis-Lure": "(zeigte mir ein Kollege das hier|Geheimtipp|wollen verbieten)",
         "Support-Ticket-Impersonierung": "\\[#\\d+\\]|Your message has been received|ticket id is|reply above this line|Please type your reply above this line",
         "Spoofed_From_via_MailingList_DMARCFail": "(?i)From: .*?@(?P<spoofed_domain>[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,})[\\s\\S]*?Sender: .*?@(?P<list_domain>[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,})[\\s\\S]*?Authentication-Results:.*dmarc=fail.*?header.from=\\k<spoofed_domain>",
-        "Google_Groups_as_Unofficial_Relay": "(?i)(?:List-ID|Mailing-List|Sender|Return-Path):.*@([a-zA-Z0-9.-]+\\.com)[\\s\\S]*?Received:.*?by.*?google\\.com[\\s\\S]*?From:.*?@([a-zA-Z0-9.-]+\\.[a-zA-Z]{2,})"
+        "Google_Groups_as_Unofficial_Relay": "(?i)(?:List-ID|Mailing-List|Sender|Return-Path):.*@([a-zA-Z0-9.-]+\\.com)[\\s\\S]*?Received:.*?by.*?google\\.com[\\s\\S]*?From:.*?@([a-zA-Z0-9.-]+\\.[a-zA-Z]{2,})",
+        "Business_Registry_Impersonation": "(?i)(?:EU|European)\\s+Business\\s+Register\\s*<register@projectlan\\.org>",
+        "PDF_Data_Harvesting_Lure": "(?i)complete and submit the attached form \\(pdf\\) in a reply.*Updating is free of charge",
+        "Future_Dated_Information_Request_Subject": "^Add or Update Your Information for \\d{4}/\\d{4}$",
+        "Suspicious_Sender_Domain": "projectlan\\.org",
+        "Reply_To_Unsubscribe_Pattern": "(?i)Please reply with Unsubscribe"
     }
 }
