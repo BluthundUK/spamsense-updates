@@ -1,9 +1,9 @@
 {
     "metadata": {
-        "version": "1.0.6",
-        "last_updated": "2026-04-02T09:55:12Z",
+        "version": "1.0.8",
+        "last_updated": "2026-04-02T13:21:55Z",
         "author": "SpamSense Security Team",
-        "signature": "1dc29MUvTEKqg4/NUx2x7ONLlNQdRiVuPEC3YfcIbrW03XZLqoOJDZjf+oSn0cUfjKutzsxXSuvEZHm8ZnBhCg=="
+        "signature": "EuAM13ZnoZqKa9H1U6aLLjBSeseiWoT5GxgNTONZuzRv39QZPPAYLDtEf4BDDIvXRWYR6uU8Lvz2iPIM0HIWBg=="
     },
     "spam_tlds": [
         "xyz",
@@ -21,7 +21,9 @@
             "out of office response",
             "telefonnummer bestätigen",
             "ihre telefonnummer bestätigen – sicherheitseinstellungen",
-            "add or update your information"
+            "add or update your information",
+            "dann zeigte mir ein kollege das hier.",
+            "obd2-chip"
         ]
     },
     "semantic_clusters": {
@@ -31,6 +33,9 @@
         "auto_reply_spam": "(out\\s*of\\s*office\\s*response|i\\s*am\\s*of\\s*the\\s*office|returning\\s*monday\\s*13th\\s*april)",
         "auto_response_abuse": "(Out\\s*Of\\s*Office\\s*Response|I\\s*am\\s*of\\s*the\\s*office|returning\\s+Mon(?:day)?|thanks\\s+for\\s+contacting)",
         "sumup_security_phishing_de": "(sumup.*?(telefonnummer\\s*(bestätigen|verifizieren)|sicherheit(seinstellungen)?|konto(aktivitäten|schutz)?))",
-        "impersonation_business_registry": "(EU\\s*Business\\s*Register|(add|update)\\s*(your\\s*)?(company|business)\\s*(details|information)|(complete|submit|reply)\\s*(the\\s*)?attached\\s*form(\\s*pdf)?|updating\\s*is\\s*free\\s*of\\s*charge|reply\\s*with\\s*Unsubscribe)"
+        "impersonation_business_registry": "(EU\\s*Business\\s*Register|(add|update)\\s*(your\\s*)?(company|business)\\s*(details|information)|(complete|submit|reply)\\s*(the\\s*)?attached\\s*form(\\s*pdf)?|updating\\s*is\\s*free\\s*of\\s*charge|reply\\s*with\\s*Unsubscribe)",
+        "scam_fuel_saving": "(OBD2-Chip|Oelkonzerne\\s*verbieten|Sprit|Kraftstoff\\s*sparen|280\\s*Euro)",
+        "Kraftstoffersparnis_MiracleProduct": "(?i)(?:280\\sEuro\\sim\\sMonat\\sfuer\\sSprit)|(?:30-Euro-OBD2-Chip)|(?:Oelkonzerne\\sverbieten\\swollen)",
+        "SocialEngineering_CuriosityBait": "(?i)(?:Dann\\szeigte\\smir\\sein\\sKollege\\sdas\\shier)"
     }
 }
