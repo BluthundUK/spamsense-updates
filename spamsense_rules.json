@@ -1,9 +1,9 @@
 {
     "metadata": {
-        "version": "1.0.20",
-        "last_updated": "2026-04-03T11:55:51Z",
+        "version": "1.0.23",
+        "last_updated": "2026-04-03T21:53:32Z",
         "author": "SpamSense Security Team",
-        "signature": "EWSUCOeTsBnyTHwiengWAlGDggpK7f9oXNkzVX8QTR3OnFVEofeyVNO4zpsmNTfDjMWhuy6XBbhRYtPaSDtODg=="
+        "signature": "m8Gu88PLY32hQdILis67cP7gb/CAHKtWyVsZWiT1+wUBu7B2+/cqiXGQZAXyU3X2KqNbXduMs+2dFpejUGQmBw=="
     },
     "spam_tlds": [
         "co",
@@ -46,7 +46,10 @@
             "vertaal-apps",
             "sonabuds",
             "medikamente",
-            "pharma"
+            "pharma",
+            "onhandige vertaal-apps",
+            "förfrågan",
+            "registrerad"
         ]
     },
     "semantic_clusters": {
@@ -112,6 +115,18 @@
         "generic_product_team_sender_dutch": "(?i)^Het\\s[A-Za-z]+\\sTeam$",
         "Pharma_Sexual_Health_Keywords": "(?i)(Potenzprobleme|Hoehepunkt|Stehkraft|Orgasmus|Liebesleben|Medikamente|Pharma|Praeparate|Beheben|Verhindert|Ohne Rezept)",
         "Discount_Delivery_Anonymity": "(?i)(Billiger|Gratis Lieferung|Kostenlosem Versand|Anonymen Brief|Diskret|Bestellung)",
-        "Fake_Medical_Professional": "(?i)Dr\\. (?:Prof\\.)? [A-Z][a-z]+(?: [A-Z][a-z]+)?"
+        "Fake_Medical_Professional": "(?i)Dr\\. (?:Prof\\.)? [A-Z][a-z]+(?: [A-Z][a-z]+)?",
+        "Generische Produkt-Domains": "shjy-kj\\.com",
+        "Google Groups Spam Indikatoren (Domain-spezifisch)": "(List-Archive:|List-Help:|List-ID:|Mailing-List:|X-Google-Group-Id:|List-Post:|List-Subscribe:|List-Unsubscribe:).*@shjy-kj\\.com",
+        "Unaufgeforderte Produktwerbung (NL)": "Stop met het gebruiken van onhandige vertaal-apps\\.|140 talen spreken\\? Nu kan het in seconden\\.",
+        "RandomDomainMailingList": "(?i)(?:Return-Path|Sender|Mailing-list):.*?@(?P<domain>[a-z0-9]{2,10}-[a-z0-9]{2,10}\\.com)",
+        "DMARCBrandSpoofing": "(?i)dmarc=fail.*?smtp\\.from=(?P<envelope_domain>[^ ]+).*?header\\.from=(?P<display_domain>yabie\\.com)",
+        "SwedishSupportPhrasing": "(?i)(Tack f=C3=B6r att du kontaktar.*?support|Ditt =C3=A4rende har f=C3=A5tt =C3=A4rendenummer)",
+        "Official-sounding-Business-Registry-Name": "(?i)EU Business Register",
+        "Call-to-Action-Information-Update": "(?i)Add or Update Your Information",
+        "Specific-Year-Range-Urgency": "\\b(20\\d{2}/20\\d{2})\\b",
+        "Attachment-Form-Reply-Request": "(?i)complete and submit the attached form \\(pdf\\) in a reply",
+        "Fake-Unsubscribe-Mechanism": "(?i)Wish to no longer receive these messages\\? Please reply with Unsubscribe",
+        "Impersonating-Sender-Domain": "projectlan\\.org"
     }
 }
