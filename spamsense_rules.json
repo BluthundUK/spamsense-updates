@@ -1,9 +1,9 @@
 {
     "metadata": {
-        "version": "1.0.14",
-        "last_updated": "2026-04-02T19:49:55Z",
+        "version": "1.0.20",
+        "last_updated": "2026-04-03T11:55:51Z",
         "author": "SpamSense Security Team",
-        "signature": "WiBon/ov89XEosXkSrNhKGH3EjJ5nuSAAsesNqbcj9AQkUJIWdI3/Aq4sRuzIJ+s8XUi7pguc3Z+E32kXQqlBA=="
+        "signature": "EWSUCOeTsBnyTHwiengWAlGDggpK7f9oXNkzVX8QTR3OnFVEofeyVNO4zpsmNTfDjMWhuy6XBbhRYtPaSDtODg=="
     },
     "spam_tlds": [
         "co",
@@ -11,7 +11,9 @@
         "link",
         "org",
         "dk",
-        "rincondelvagocom"
+        "rincondelvagocom",
+        "com",
+        "de"
     ],
     "keywords": {
         "malware_subjects": [
@@ -36,7 +38,15 @@
             "tan-verfahren",
             "vr-securego",
             "update",
-            "your information"
+            "your information",
+            "stop met het gebruiken",
+            "(#\\d{5})",
+            "stop",
+            "onhandige",
+            "vertaal-apps",
+            "sonabuds",
+            "medikamente",
+            "pharma"
         ]
     },
     "semantic_clusters": {
@@ -82,6 +92,26 @@
         "company_information_request": "^(To add or update your company details for EU Business Register for 2026/2027, please complete and submit the attached form\\(pdf\\) in a reply.)",
         "unsubscription_request": "^(Wish to no longer receive these messages\\? Please reply with Unsubscribe.)",
         "sender_details": "^(EU BUSINESS REGISTER\\n?P\\.O\\.BOX 2021\\n?3500 GA UTRECHT\\n?THE NETHERLANDS)",
-        "attachment_handling": "^(All file formats are accepted\\.|You can also take a photo of the completed \\(form\\.pdf\\) document and email it in a reply\\.)"
+        "attachment_handling": "^(All file formats are accepted\\.|You can also take a photo of the completed \\(form\\.pdf\\) document and email it in a reply\\.)",
+        "Spoofing_From_Sender_Mismatch": "From:\\s*palvelukeskus@fi\\.issworld\\.com\\s*Sender:\\s*u4@shjy-kj\\.com",
+        "DMARC_Fail_Header_From_Spoof": "dmarc=fail\\s+\\(p=NONE\\s+sp=NONE\\)\\s+smtp\\.from=shjy-kj\\.com\\s+header\\.from=fi\\.issworld\\.com",
+        "Suspicious_Google_Group_Domain": "(?:List-ID:|groups\\.google\\.com/a/)(shjy-kj\\.com)",
+        "Impersonation_Support_Billing": "(support|info)@(42nerds\\.com|42nerds\\.odoo\\.com)|Kundendienstticket|Support-Ticket|Ticketnummer|helpdesk\\.ticket",
+        "Scareware_Advance_Fee": "kostenpflichtige Dienstleistung|150\\s€\\s(pro\\sStunde)?|Umsatzsteuer|Rechnung|Vertragsbedingungen",
+        "Suspicious_Random_Domain_Pattern": "[a-z]{4,8}-[a-z]{2,5}\\.com",
+        "Randomized Sender Domain Pattern": "[a-z]{4,}-[a-z]{2,}\\.com",
+        "From Header Obfuscation": "via\\s[a-zA-Z]{5,}\\s<[a-zA-Z0-9\\-\\_+]{5,}@",
+        "Coercive Cost Language": "(kostenpflichtig|€\\s*pro\\s*Stunde|Rechnung|Vertragsbedingungen)",
+        "Hidden Unicode Block Characters": "[\\u2580-\\u259F]{10,}",
+        "Google_Groups_Spoofing_Attempt": "From:\\s*[^@]+@(?P<from_domain>[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,6}).*?List-Archive:\\s*<https:\\/\\/groups\\.google\\.com\\/a\\/(?P<group_domain>[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,6})\\/",
+        "Unusual_Dutch_Subject_Keywords": "Subject:.*?\\b(?:Stop\\s+met\\s+het\\s+gebruiken\\s+van\\s+onhandige|vertaal-apps)\\b",
+        "Random_Recipient_Username_in_List_Context": "To:\\s*(?P<random_user>[a-z0-9]{8,20})@([a-z0-9-]+\\.[a-z]{2,6}).*?List-ID:\\s*<\\w+\\.\\2>",
+        "suspicious_domain_pattern": "[a-z0-9]{3,}-[a-z0-9]{3,}\\.com",
+        "dutch_translation_scam_subject": "(?i)stop met het gebruiken van onhandige vertaal-apps",
+        "dutch_language_superlative_offer": "(?i)\\d{1,3} talen spreken\\? Nu kan het in seconden\\.",
+        "generic_product_team_sender_dutch": "(?i)^Het\\s[A-Za-z]+\\sTeam$",
+        "Pharma_Sexual_Health_Keywords": "(?i)(Potenzprobleme|Hoehepunkt|Stehkraft|Orgasmus|Liebesleben|Medikamente|Pharma|Praeparate|Beheben|Verhindert|Ohne Rezept)",
+        "Discount_Delivery_Anonymity": "(?i)(Billiger|Gratis Lieferung|Kostenlosem Versand|Anonymen Brief|Diskret|Bestellung)",
+        "Fake_Medical_Professional": "(?i)Dr\\. (?:Prof\\.)? [A-Z][a-z]+(?: [A-Z][a-z]+)?"
     }
 }
