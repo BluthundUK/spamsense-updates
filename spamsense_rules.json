@@ -1,9 +1,9 @@
 {
     "metadata": {
-        "version": "1.0.23",
-        "last_updated": "2026-04-03T21:53:32Z",
+        "version": "1.0.24",
+        "last_updated": "2026-04-04T14:33:30Z",
         "author": "SpamSense Security Team",
-        "signature": ""
+        "signature": "7scq+lUsPXXqiCD+PWWq9Yxmf6bwnzpbUqBVJxEaVmqqsCpX9Qe/PG5hE3nR8G381cAM7FPKH5qBR/Ec/sxcCw=="
     },
     "spam_tlds": [
         "co",
@@ -49,7 +49,10 @@
             "pharma",
             "onhandige vertaal-apps",
             "förfrågan",
-            "registrerad"
+            "registrerad",
+            "regierungsskandal",
+            "deckt auf",
+            "🚨"
         ]
     },
     "semantic_clusters": {
@@ -127,6 +130,9 @@
         "Specific-Year-Range-Urgency": "\\b(20\\d{2}/20\\d{2})\\b",
         "Attachment-Form-Reply-Request": "(?i)complete and submit the attached form \\(pdf\\) in a reply",
         "Fake-Unsubscribe-Mechanism": "(?i)Wish to no longer receive these messages\\? Please reply with Unsubscribe",
-        "Impersonating-Sender-Domain": "projectlan\\.org"
+        "Impersonating-Sender-Domain": "projectlan\\.org",
+        "Skandal & Enthüllung": "(Regierungsskandal|Finanzschlupfloch|Maximilian Roth|brisante[s]? Interview|Verbotene Tipps|Übertragung abrupt unterbrochen|Bundesbank.*abgeschaltet|Insider behaupten|Ermittlungen gegen|streng gehütetes Finanzschlupfloch)",
+        "Legitimer Service Missbrauch (Cloud Storage)": "https:\\/\\/storage\\.googleapis\\.com\\/[a-zA-Z0-9]+\\/[a-zA-Z0-9]+\\.html",
+        "HTML Evasion (Versteckter Text)": "(opacity:\\s*0|display:\\s*none|color:\\s*#fff)"
     }
 }
